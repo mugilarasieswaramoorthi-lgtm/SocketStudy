@@ -63,6 +63,8 @@ client.py
 
 <img width="564" height="295" alt="image" src="https://github.com/user-attachments/assets/572d541e-74e6-464a-b99c-6ddcf12353c5" />
 
+## OUTPUT:
+
 server.py output:
 <img width="470" height="85" alt="image" src="https://github.com/user-attachments/assets/f3bc6403-96d6-410e-87df-371cbde1fe02" />
 
