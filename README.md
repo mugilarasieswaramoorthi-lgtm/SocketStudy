@@ -1,7 +1,7 @@
 # Ex.No:1a  			Study of Socket Programming
 
 ## Aim: 
-To perform a study on Socket Programming
+To study on Socket Programming
 ## Introduction:
 
  	Socket programming is a crucial aspect of network communication, allowing for data exchange between computers over a network. It forms the backbone of various networked applications, enabling communication between clients and servers. This study explores the fundamental concepts of socket programming, its use cases, and provides a practical example to demonstrate its implementation.
@@ -56,46 +56,12 @@ Socket programming finds applications in various domains, including web developm
 ## PROGRAM:
 server.py
 
-import socket
+<img width="579" height="428" alt="image" src="https://github.com/user-attachments/assets/5446f974-938c-4797-a926-3682e5b2b0f3" />
 
-server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-host = '127.0.0.1'
-port = 12345
-server_socket.bind((host, port))
-
-server_socket.listen(1)
-print("Server is waiting for connection...")
-
-conn, addr = server_socket.accept()
-print("Connected to:", addr)
-
-data = conn.recv(1024).decode()
-print("Client says:", data)
-
-message = "Hello Client, message received!"
-conn.send(message.encode())
-
-conn.close()
-server_socket.close()
 
 client.py
 
-import socket
-
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-host = '127.0.0.1'
-port = 12345
-client_socket.connect((host, port))
-
-message = "Hello Server!"
-client_socket.send(message.encode())
-
-data = client_socket.recv(1024).decode()
-print("Server says:", data)
-
-client_socket.close()
+<img width="564" height="295" alt="image" src="https://github.com/user-attachments/assets/572d541e-74e6-464a-b99c-6ddcf12353c5" />
 
 server.py output:
 <img width="470" height="85" alt="image" src="https://github.com/user-attachments/assets/f3bc6403-96d6-410e-87df-371cbde1fe02" />
